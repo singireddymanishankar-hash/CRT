@@ -1,3 +1,5 @@
+'''
+'''
 # Weird/Not Weird
 
 ## Problem Statement

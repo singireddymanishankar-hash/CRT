@@ -34,14 +34,11 @@ while n>0:
         print(digit,end=" ")
     n=n//10'''
     
-    n=int(input())
-    temp=reverse(n)
-    print(temp==0)
-    if temp==0:
-        
+n=int(input())
+temp=reverse(n)
+print(temp==0)
+if temp==0:
         print(True)
-    else:
-        
-        print(False)    
-    print(True)if temp==0 else print(False)        
-    
+else:    
+    print(False)    
+print(True)if temp==0 else print(False)        

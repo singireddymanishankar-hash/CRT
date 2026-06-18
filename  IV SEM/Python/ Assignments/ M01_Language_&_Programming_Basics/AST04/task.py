@@ -1,4 +1,6 @@
 def Reverse_String(s: str) -> str:
+    if not isinstance(s, str):
+        raise TypeError(f"Expected str, got {type(s).__name__}")
     reversed_string = ""
     for char in s:
         reversed_string = char + reversed_string

@@ -1,7 +1,7 @@
 #1)  create a list of 5 elements and print the list
 my_list = [1, 2, 3, 4, 5]
 print(my_list)      
-b=list(10,20,312)
+b=[10,20,312]
 print(b)
 
 #2)accessing elements of list

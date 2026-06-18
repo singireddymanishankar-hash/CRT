@@ -34,11 +34,17 @@ while n>0:
         print(digit,end=" ")
     n=n//10'''
     
+def reverse(n):
+    rev=0
+    while n>0:
+        rev=rev*10+n%10
+        n=n//10
+    return rev
+
 n=int(input())
 temp=reverse(n)
-print(temp==0)
-if temp==0:
-        print(True)
-else:    
-    print(False)    
-print(True)if temp==0 else print(False)        
+print(temp==n)
+if temp==n:
+    print(True)
+else:
+    print(False)

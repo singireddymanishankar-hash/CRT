@@ -12,5 +12,21 @@ class TestAssignment(unittest.TestCase):
     def test_with_zero(self):
         self.assertEqual(Collatz_Sequence(10),[10, 5, 16, 8, 4, 2, 1])
 
+    def test_one(self):
+        self.assertEqual(Collatz_Sequence(1), [1])
+
+    def test_power_of_two(self):
+        self.assertEqual(Collatz_Sequence(8), [8, 4, 2, 1])
+
+    def test_two(self):
+        self.assertEqual(Collatz_Sequence(2), [2, 1])
+
+    def test_three(self):
+        self.assertEqual(Collatz_Sequence(3), [3, 10, 5, 16, 8, 4, 2, 1])
+
+    def test_ends_with_one(self):
+        result = Collatz_Sequence(7)
+        self.assertEqual(result[-1], 1)
+
 if __name__ == "__main__":
     unittest.main()

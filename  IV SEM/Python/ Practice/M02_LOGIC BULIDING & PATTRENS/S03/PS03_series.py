@@ -1,30 +1,28 @@
-'''
-arithemetic series
-'''
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', '..'))
+
+from shared_utils.series_utils import (
+    arithmetic_series,
+    geometric_series,
+    fibonacci_iterative,
+    factorial_series,
+)
+
+'''arithmetic series'''
 '''n=int(input())
 a=int(input())
-for i in range(10):
-    print(n + i * a,end=" ") 
-    '''
+print(*arithmetic_series(n, a, 10))'''
+
 '''geometric series'''
 '''n=int(input())
 r=int(input())
-for i in range(10):
-    print(n * (r**i),end=" ") 
-    
-    '''
-'''fibonacci series'''
+print(*geometric_series(n, r, 10))'''
 
+'''fibonacci series'''
 '''n=int(input())
-a=0
-b=1
-for i in range(n): 
-    print(a,end=" ")
-    a,b=b,a+b'''
-    
+print(*fibonacci_iterative(n))'''
+
 '''factorial series'''
-n=int(input())
-fact=1
-for i in range(1,n+1):              
-    fact=fact*i
-    print(fact ,end=" ")
+n = int(input())
+print(*factorial_series(n))

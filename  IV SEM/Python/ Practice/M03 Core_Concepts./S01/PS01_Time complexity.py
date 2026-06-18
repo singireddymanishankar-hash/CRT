@@ -1,10 +1,9 @@
-def fibo(n):            
-    if n <= 0:           
-        return 0
-    elif n == 1:         
-        return 1
-    else:                
-        return fibo(n-1) + fibo(n-2)        
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', '..', '..'))
+
+from shared_utils.series_utils import fibonacci_recursive
+
 if __name__ == '__main__':
     n = int(input())
-    print(fibo(n))
+    print(fibonacci_recursive(n))
